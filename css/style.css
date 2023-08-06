@@ -677,6 +677,12 @@ footer .credit a {
   html {
     font-size: 62.5%;
   }
-
-  /* Add your tablet-specific CSS rules here */
 }
+
+/* HP */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+
