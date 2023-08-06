@@ -1,0 +1,682 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar search form */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.result-image {
+  max-width: 100%;
+  display: none;
+}
+
+
+/* call Cart */
+.call-cart {
+  position: absolute;
+  top: 100%;
+  right: -140%;
+  height: 100vh;
+  width: 30rem;
+  padding: 0 2rem;
+  background-color: #fff;
+  color: var(--bg);
+  transition: 1s;
+}
+
+.call-cart.active {
+  right: 0;
+}
+
+.call-cart .cart-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: right;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #666;
+  position: relative;
+}
+
+.call-cart img {
+  height: 5rem;
+  border-radius: 70%;
+}
+
+.call-cart h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.call-cart .item-price {
+  font-size: 1.2rem;
+}
+
+.call-cart .remove-item {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.call-cart .remove-item:hover {
+  color: var(--primary);
+}
+
+.whatsapp-icon2 {
+  width: 2rem; /* Biarkan tinggi gambar disesuaikan agar gambar tidak terdistorsi */
+}
+
+.whatsapp-icon img {
+  max-height: auto; /* Biarkan tinggi gambar disesuaikan agar gambar tidak terdistorsi */
+}
+
+/* CSS Penyesuaian Slide Gambar home */
+
+/* Hero Section */
+.menu h2,
+.products h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.menu p,
+.products p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.home .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.home .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.home .row .menu-card img {
+  border-radius: 5%;
+  width: 3%;
+}
+
+.home .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+
+/* About Section */
+.about,
+.menu,
+.products,
+.contact {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.products h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 10rem;
+}
+
+
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 4rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.biotiskita {
+  width:10%;
+}
+
+.peta {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content:left;
+  align-items: left;
+}
+
+/* Menu Section */
+.menu h2,
+.products h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.menu p,
+.products p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 5%;
+  width: 3%;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* Products Section */
+.menu h2,
+.products h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.menu p,
+.products p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.product .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.product .row .menu-card img {
+  border-radius: 5%;
+  width: 3%;
+}
+
+.product .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 80% {
+    transform: translateX(-15%);
+  }
+  40%, 60% {
+    transform: translateX(-5%);
+  }
+}
+
+/* Contact Section */
+.contact .row {
+  display: flex;
+  height: auto; /* Mengubah ketinggian menjadi otomatis untuk mengikuti konten */
+  justify-content: center; /* Mencentralkan konten secara horizontal */
+  align-items: center; /* Mencentralkan konten secara vertikal */
+  background-color: #222; /* Warna latar belakang */
+}
+
+.contact .row .map {
+  flex: 1 1 30%; /* Mengatur lebar peta menjadi 45% dari kontainer */
+  max-width: 30%; /* Batasi lebar peta agar tidak bergeser */
+  margin-left:35%;
+  object-fit: cover; /* Mengatur tampilan peta agar sesuai */
+}
+
+.contact .row form {
+  flex: 1 1 30%; /* Mengatur lebar form menjadi 45% dari kontainer */
+  max-width: 45%; /* Batasi lebar form agar tidak bergeser */
+  padding: 5rem 2rem; /* Padding pada form */
+  text-align: center; /* Posisi teks menjadi tengah pada form */
+}
+
+.contact .row form .input-group {
+  display: flex;
+  flex-direction: column; /* Mengatur elemen input dalam kolom */
+  align-items: center; /* Mencentralkan elemen input secara horizontal */
+  margin: 10rem 0; /* Mengatur margin atas dan bawah sebesar 10rem, dan margin kiri dan kanan 0 */
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding: 2rem; /* Padding pada elemen input */
+}
+
+.contact .row form .btn {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+
+}
+
+/* CSS Penyesuaian Slide Gambar home */
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.slides li {
+  flex: 0 0 100%; /* Each slide takes full width */
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.caption h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 16px;
+  max-width: 70%;
+}
+
+.slide-image {
+  width: 80%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-left: 10%;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+  justify-content: center; /* Meratakan gambar dengan jarak di antara */
+  align-items: center; /* Mengatur perataan vertikal */
+}
+.slide-image1 {
+  width: 80%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-left: 10%;
+  margin-top: 15rem;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+  justify-content: center; /* Meratakan gambar dengan jarak di antara */
+  align-items: center; /* Mengatur perataan vertikal */
+}
+.slide-image2 {
+  width: 95%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-left: 5%;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+  justify-content: center; /* Meratakan gambar dengan jarak di antara */
+  align-items: center; /* Mengatur perataan vertikal */
+}
+
+.slide-images {
+  width: 60%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 3rem;
+  margin-left: 32%;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+}
+.slide-images1 {
+  width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: none;
+  margin-left: 32%;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+}
+.slide-images2 {
+  width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 3rem;
+  margin-left: 32%;
+  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
+  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
+  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
+  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+}
+
+
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  /* Add your tablet-specific CSS rules here */
+}
