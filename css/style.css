@@ -493,9 +493,9 @@ footer .credit a {
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media (max-width: 480px) {
   html {
-    font-size: 62.5%;
+    font-size: 30%;
   }
 
   /* ... (kode lain untuk respon tablet) ... */
@@ -693,39 +693,3 @@ footer .credit a {
 }
 
 
-
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-
-  /* ... (kode lain untuk respon laptop) ... */
-}
-
-/* Tablet */
-@media (max-width: 758px) {
-  html {
-    font-size: 62.5%;
-  }
-
-  /* ... (kode lain untuk respon tablet) ... */
-}
-
-/* HP */
-@media (max-width: 360px) {
-  html {
-    font-size: 30%;
-  }
-
-  /* ... (kode lain untuk respon HP) ... */
-}
