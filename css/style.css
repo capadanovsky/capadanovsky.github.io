@@ -479,6 +479,14 @@ footer .credit a {
   html {
     font-size: 62.5%;
   }
+}
+
+/* HP */
+@media (max-width: 360px) {
+  html {
+    font-size: 30%;
+  }
+}
 
   #hamburger-menu {
     display: inline-block;
