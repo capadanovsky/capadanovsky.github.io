@@ -164,7 +164,7 @@ body {
 }
 
 .call-cart h3 {
-  font-size: 2rem;
+  font-size: 1rem;
   padding-bottom: 0.5rem;
 }
 
@@ -368,16 +368,32 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
-@keyframes slide {
-  0%, 100% {
-    transform: translateX(0);
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
   }
-  20%, 80% {
-    transform: translateX(-15%);
+
+  /* ... (kode lain untuk respon laptop) ... */
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
   }
-  40%, 60% {
-    transform: translateX(-5%);
+
+  /* ... (kode lain untuk respon tablet) ... */
+}
+
+/* HP */
+@media (max-width: 360px) {
+  html {
+    font-size: 30%;
   }
+
+  /* ... (kode lain untuk respon HP) ... */
 }
 
 /* Contact Section */
@@ -472,6 +488,8 @@ footer .credit a {
   html {
     font-size: 75%;
   }
+
+  /* ... (kode lain untuk respon laptop) ... */
 }
 
 /* Tablet */
@@ -479,6 +497,8 @@ footer .credit a {
   html {
     font-size: 62.5%;
   }
+
+  /* ... (kode lain untuk respon tablet) ... */
 }
 
 /* HP */
@@ -486,6 +506,8 @@ footer .credit a {
   html {
     font-size: 30%;
   }
+
+  /* ... (kode lain untuk respon HP) ... */
 }
 
   #hamburger-menu {
@@ -566,7 +588,6 @@ footer .credit a {
     padding-top: 0;
   }
 
-}
 
 /* CSS Penyesuaian Slide Gambar home */
 
@@ -632,7 +653,8 @@ footer .credit a {
   align-items: center; /* Mengatur perataan vertikal */
 }
 .slide-image2 {
-  width: 95%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 15rem;
   margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
@@ -644,7 +666,7 @@ footer .credit a {
 
 .slide-images {
   width: 60%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: 32%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
@@ -653,7 +675,7 @@ footer .credit a {
 }
 .slide-images1 {
   width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: none;
+  margin-top: 5rem;
   margin-left: 32%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
@@ -662,7 +684,7 @@ footer .credit a {
 }
 .slide-images2 {
   width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: 32%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
@@ -680,11 +702,23 @@ footer .credit a {
   }
 }
 
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  /* ... (kode lain untuk respon laptop) ... */
+}
+
 /* Tablet */
 @media (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
+
+  /* ... (kode lain untuk respon tablet) ... */
 }
 
 /* HP */
@@ -692,5 +726,6 @@ footer .credit a {
   html {
     font-size: 30%;
   }
-}
 
+  /* ... (kode lain untuk respon HP) ... */
+}
