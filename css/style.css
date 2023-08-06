@@ -374,10 +374,6 @@ body {
   html {
     font-size: 75%;
   }
-
-  /* ... (kode lain untuk respon laptop) ... */
-}
-
 /* Tablet */
 @media (max-width: 758px) {
   html {
