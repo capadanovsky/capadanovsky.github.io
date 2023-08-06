@@ -283,7 +283,7 @@ body {
 }
 
 .biotiskita {
-  width:10%;
+  width:5%;
 }
 
 .peta {
@@ -374,6 +374,10 @@ body {
   html {
     font-size: 75%;
   }
+
+  /* ... (kode lain untuk respon laptop) ... */
+}
+
 /* Tablet */
 @media (max-width: 758px) {
   html {
@@ -510,6 +514,19 @@ footer .credit a {
     display: inline-block;
   }
 
+  .navbar {
+    padding: 0.4rem 4%; /* Mengurangi padding horizontal pada HP */
+  }
+
+  .navbar .navbar-logo {
+    font-size: 2.5rem; /* Mengurangi ukuran font pada logo navbar di HP */
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 1rem; /* Mengurangi ukuran font pada menu navbar di HP */
+    margin: 0 0.5rem; /* Mengurangi margin pada menu navbar di HP */
+  }
+
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
@@ -550,7 +567,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 24rem;
+    height: 15rem;
     object-fit: cover;
     object-position: center;
   }
