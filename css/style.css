@@ -38,7 +38,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   font-style: italic;
@@ -81,54 +81,8 @@ body {
   color: var(--primary);
 }
 
-#hamburger-menu {
-  display: none;
-}
 
-/* Navbar search form */
-.navbar .search-form {
-  position: absolute;
-  top: 100%;
-  right: 7%;
-  background-color: #fff;
-  width: 50rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: 0.3s;
-}
 
-.navbar .search-form.active {
-  transform: scaleY(1);
-}
-
-.navbar .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1.6rem;
-  color: var(--bg);
-  padding: 1rem;
-}
-
-.navbar .search-form label {
-  cursor: pointer;
-  font-size: 2rem;
-  margin-right: 1.5rem;
-  color: var(--bg);
-}
-
-.search-icon {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-.result-image {
-  max-width: 100%;
-  display: none;
-}
 
 
 /* call Cart */
@@ -164,7 +118,7 @@ body {
 }
 
 .call-cart h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   padding-bottom: 0.5rem;
 }
 
@@ -182,13 +136,10 @@ body {
   color: var(--primary);
 }
 
-.whatsapp-icon2 {
-  width: 2rem; /* Biarkan tinggi gambar disesuaikan agar gambar tidak terdistorsi */
-}
-
 .whatsapp-icon img {
   max-height: auto; /* Biarkan tinggi gambar disesuaikan agar gambar tidak terdistorsi */
 }
+
 
 /* CSS Penyesuaian Slide Gambar home */
 
@@ -283,8 +234,15 @@ body {
 }
 
 .biotiskita {
-  width:5%;
+  width:20%;
 }
+
+.pilihan {
+  font-size: 1.5rem ;
+  margin-left: 5rem;
+  color: white;
+}
+
 
 .peta {
   width: 50%;
@@ -368,32 +326,16 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-  html {
-    font-size: 75%;
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
   }
-
-  /* ... (kode lain untuk respon laptop) ... */
-}
-
-/* Tablet */
-@media (max-width: 758px) {
-  html {
-    font-size: 62.5%;
+  20%, 80% {
+    transform: translateX(-15%);
   }
-
-  /* ... (kode lain untuk respon tablet) ... */
-}
-
-/* HP */
-@media (max-width: 360px) {
-  html {
-    font-size: 30%;
+  40%, 60% {
+    transform: translateX(-5%);
   }
-
-  /* ... (kode lain untuk respon HP) ... */
 }
 
 /* Contact Section */
@@ -488,45 +430,15 @@ footer .credit a {
   html {
     font-size: 75%;
   }
-
-  /* ... (kode lain untuk respon laptop) ... */
 }
 
 /* Tablet */
-@media (max-width: 480px) {
+@media (max-width: 758px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
   }
 
-  /* ... (kode lain untuk respon tablet) ... */
-}
-
-/* HP */
-@media (max-width: 360px) {
-  html {
-    font-size: 30%;
-  }
-
-  /* ... (kode lain untuk respon HP) ... */
-}
-
-  #hamburger-menu {
-    display: inline-block;
-  }
-
-  .navbar {
-    padding: 0.4rem 4%; /* Mengurangi padding horizontal pada HP */
-  }
-
-  .navbar .navbar-logo {
-    font-size: 2.5rem; /* Mengurangi ukuran font pada logo navbar di HP */
-  }
-
-  .navbar .navbar-nav a {
-    font-size: 1rem; /* Mengurangi ukuran font pada menu navbar di HP */
-    margin: 0 0.5rem; /* Mengurangi margin pada menu navbar di HP */
-  }
-
+ 
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
@@ -557,17 +469,14 @@ footer .credit a {
     transform: scaleX(0.2);
   }
 
-  .navbar .search-form {
-    width: 90%;
-    right: 2rem;
-  }
+  
 
   .about .row {
     flex-wrap: wrap;
   }
 
   .about .row .about-img img {
-    height: 15rem;
+    height: 24rem;
     object-fit: cover;
     object-position: center;
   }
@@ -601,6 +510,7 @@ footer .credit a {
     padding-top: 0;
   }
 
+}
 
 /* CSS Penyesuaian Slide Gambar home */
 
@@ -644,20 +554,10 @@ footer .credit a {
   max-width: 70%;
 }
 
-.slide-image {
-  width: 80%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-left: 10%;
-  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
-  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
-  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
-  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
-  justify-content: center; /* Meratakan gambar dengan jarak di antara */
-  align-items: center; /* Mengatur perataan vertikal */
-}
 .slide-image1 {
-  width: 80%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-left: 10%;
-  margin-top: 15rem;
+  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-left: 5%;
+  margin-top: 18rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
@@ -666,8 +566,8 @@ footer .credit a {
   align-items: center; /* Mengatur perataan vertikal */
 }
 .slide-image2 {
-  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 15rem;
+  width: 50%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 8rem;
   margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
@@ -679,30 +579,24 @@ footer .credit a {
 
 .slide-images {
   width: 60%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 5rem;
+  margin-top: 20rem;
   margin-left: 32%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
   display: flex; /* Menggunakan flexbox untuk meratakan gambar */
 }
-.slide-images1 {
-  width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 5rem;
-  margin-left: 32%;
-  height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
-  max-height: 100%; /* Menetapkan tinggi maksimal gambar */
-  object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
-  display: flex; /* Menggunakan flexbox untuk meratakan gambar */
-}
+
 .slide-images2 {
-  width: 30%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 5rem;
-  margin-left: 32%;
+  width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 10rem;
+  margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
   display: flex; /* Menggunakan flexbox untuk meratakan gambar */
+  justify-content: center; /* Meratakan gambar dengan jarak di antara */
+  align-items: center; /* Mengatur perataan vertikal */
 }
 
 
