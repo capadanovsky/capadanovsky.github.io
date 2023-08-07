@@ -1,13 +1,3 @@
-// Toggle class active untuk hamburger menu
-const navbarNav = document.querySelector('.navbar-nav');
-// ketika hamburger menu di klik
-document.querySelector('#hamburger-menu').onclick = () => {
-  navbarNav.classList.toggle('active');
-};
-
-// Toggle class active untuk search form
-
-
 // Toggle class active untuk call cart
 const callCart = document.querySelector('.call-cart');
 document.querySelector('#call-cart-button').onclick = (e) => {
@@ -17,7 +7,6 @@ document.querySelector('#call-cart-button').onclick = (e) => {
 
 // Klik di luar elemen
 const hm = document.querySelector('#hamburger-menu');
-const sb = document.querySelector('#search-button');
 const sc = document.querySelector('#call-cart-button');
 
 document.addEventListener('click', function (e) {
@@ -25,11 +14,7 @@ document.addEventListener('click', function (e) {
     navbarNav.classList.remove('active');
   }
 
-  if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
-    searchForm.classList.remove('active');
-  }
-
-  if (!sc.contains(e.target) && !callCart.contains(e.target)) {
+   if (!sc.contains(e.target) && !callCart.contains(e.target)) {
     callCart.classList.remove('active');
   }
 });
