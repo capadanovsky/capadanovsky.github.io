@@ -555,7 +555,7 @@ footer .credit a {
 }
 
 .slide-image1 {
-  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
   margin-left: 5%;
   margin-top: 18rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
