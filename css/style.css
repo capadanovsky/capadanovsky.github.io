@@ -557,7 +557,7 @@ footer .credit a {
 .slide-image1 {
   width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
   margin-left: 5%;
-  margin-top: 18rem;
+  margin-top: 23rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
@@ -589,7 +589,7 @@ footer .credit a {
 
 .slide-images2 {
   width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 10rem;
+  margin-top: 18rem;
   margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
