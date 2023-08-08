@@ -566,7 +566,7 @@ footer .credit a {
   align-items: center; /* Mengatur perataan vertikal */
 }
 .slide-image2 {
-  width: 50%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
   margin-top: 8rem;
   margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
