@@ -87,7 +87,7 @@ body {
   top: 100%;
   right: -140%;
   height: 100vh;
-  width: 30rem;
+  width: 20rem;
   padding: 0 2rem;
   background-color: #fff;
   color: var(--bg);
@@ -109,17 +109,17 @@ body {
 }
 
 .call-cart img {
-  height: 5rem;
+  height: 4rem;
   border-radius: 70%;
 }
 
 .call-cart h3 {
-  font-size: 2rem;
-  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
 }
 
 .call-cart .item-price {
-  font-size: 1.2rem;
+  font-size: 0.7rem;
 }
 
 .call-cart .remove-item {
@@ -451,7 +451,10 @@ body {
 
   /* ... */
 
-
+.petugas {
+  width:25%;
+  margin-left: 1rem;
+}
 
 .biotiskita {
   width:20%;
@@ -736,7 +739,7 @@ footer .credit a {
 .slide-image1 {
   width: 100%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
   padding-left: 1rem;
-  margin-top: 18rem;
+  margin-top: 7rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
@@ -768,7 +771,7 @@ footer .credit a {
 
 .slide-images2 {
   width: 100%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding-left: 1rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
