@@ -38,7 +38,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
   font-style: italic;
@@ -80,10 +80,6 @@ body {
 .navbar .navbar-extra a:hover {
   color: var(--primary);
 }
-
-
-
-
 
 /* call Cart */
 .call-cart {
@@ -144,11 +140,17 @@ body {
 /* CSS Penyesuaian Slide Gambar home */
 
 /* Hero Section */
+.home h2 {
+  text-align: center;
+}
+.about h2,
 .menu h2,
 .products h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
+.home p,
+.about p,
 .menu p,
 .products p,
 .contact p {
@@ -180,6 +182,47 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
+/* Products Section */
+.home h2,
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+  margin-bottom: 1rem;
+}
+.home p,
+.about p,
+.menu p,
+.products p,
+.contact p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.product .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.product .row .menu-card img {
+  border-radius: 5%;
+  width: 3%;
+}
+
+.product .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
 
 /* About Section */
 .about,
@@ -205,47 +248,224 @@ body {
   color: var(--primary);
 }
 
-.about .row {
+.about .row,
+.menu .row,
+.products .row,
+.contact .row {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
-.about .row .about-img {
+.about .row .about-img,
+.menu .row .about-img,
+.products .row .about-img,
+.contact .row .about-img {
   flex: 1 1 10rem;
 }
 
-
-
-.about .row .content {
+.about .row .content,
+.menu .row .content,
+.products .row .content,
+.contact .row .content {
   flex: 1 1 35rem;
   padding: 0 4rem;
 }
 
-.about .row .content h3 {
+.about .row .content h3,
+.menu .row .content h3,
+.products .row .content h3,
+.contact .row .content h3 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  margin-left: 6rem;
+  margin-bottom: 0.2rem;
+  margin-left: 2rem;
 }
 
-.about .row .content p {
+.about .row .content p,
+.menu .row .content p,
+.products .row .content p,
+.contact .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
 }
 
+/* ... */
+
+/* Tablet */
+@media (max-width: 758px) {
+  /* ... */
+
+  .about .row,
+  .menu .row,
+  .products .row,
+  .contact .row {
+    flex-wrap: wrap;
+  }
+}
+  .about .row .about-img img,
+  .menu .row .about-img img,
+  .products .row .about-img img,
+  .contact .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content,
+  .menu .row .content,
+  .products .row .content,
+  .contact .row .content {
+    padding: 0;
+  }
+
+  
+ /* About Section */
+.about,
+.menu,
+.products,
+.contact {
+  padding: 4rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.products h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about .row,
+.menu .row,
+.products .row,
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about .row .about-img,
+.menu .row .about-img,
+.products .row .about-img,
+.contact .row .about-img {
+  flex: 1 1 100%;
+}
+
+.about .row .content,
+.menu .row .content,
+.products .row .content,
+.contact .row .content {
+  flex: 1 1 100%;
+  padding: 0 1rem;
+}
+
+.about .row .content h3,
+.menu .row .content h3,
+.products .row .content h3,
+.contact .row .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about .row .content p,
+.menu .row .content p,
+.products .row .content p,
+.contact .row .content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* ... */
+
+/* Tablet */
+@media (max-width: 758px) {
+  /* ... */
+
+  .about .row,
+  .menu .row,
+  .products .row,
+  .contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .row .about-img img,
+  .menu .row .about-img img,
+  .products .row .about-img img,
+  .contact .row .about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content,
+  .menu .row .content,
+  .products .row .content,
+  .contact .row .content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about .row .content h3,
+  .menu .row .content h3,
+  .products .row .content h3,
+  .contact .row .content h3 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .about .row .content p,
+  .menu .row .content p,
+  .products .row .content p,
+  .contact .row .content p {
+    font-size: 1.2rem;
+  }
+
+
+
+.contact .row .content h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p,
+  .menu .row .content p,
+  .products .row .content p,
+  .contact .row .content p {
+    font-size: 0.6rem;
+  }
+
+  /* ... */
+
+
+
 .biotiskita {
   width:20%;
 }
 
 .pilihan {
-  font-size: 1.5rem ;
-  margin-left: 5rem;
+  font-size: 0.8rem ;
+  margin-left: 2rem;
   color: white;
 }
 
 
 .peta {
-  width: 50%;
+  width: 80%;
   margin: 20px auto;
   display: flex;
   justify-content:left;
@@ -326,17 +546,6 @@ body {
   margin: 1rem auto 0.5rem;
 }
 
-@keyframes slide {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  20%, 80% {
-    transform: translateX(-15%);
-  }
-  40%, 60% {
-    transform: translateX(-5%);
-  }
-}
 
 /* Contact Section */
 .contact .row {
@@ -348,16 +557,16 @@ body {
 }
 
 .contact .row .map {
-  flex: 1 1 30%; /* Mengatur lebar peta menjadi 45% dari kontainer */
+  flex: 2 2 30%; /* Mengatur lebar peta menjadi 45% dari kontainer */
   max-width: 30%; /* Batasi lebar peta agar tidak bergeser */
   margin-left:35%;
   object-fit: cover; /* Mengatur tampilan peta agar sesuai */
 }
 
 .contact .row form {
-  flex: 1 1 30%; /* Mengatur lebar form menjadi 45% dari kontainer */
+  flex: 1 1 40%; /* Mengatur lebar form menjadi 45% dari kontainer */
   max-width: 45%; /* Batasi lebar form agar tidak bergeser */
-  padding: 5rem 2rem; /* Padding pada form */
+  padding: 5rem 5rem; /* Padding pada form */
   text-align: center; /* Posisi teks menjadi tengah pada form */
 }
 
@@ -432,11 +641,6 @@ footer .credit a {
   }
 }
 
-/* Tablet */
-@media (max-width: 758px) {
-  html {
-    font-size: 50%;
-  }
 
  
   .navbar .navbar-nav {
@@ -468,32 +672,7 @@ footer .credit a {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
-
   
-
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
-
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
-
   .menu p {
     font-size: 1.2rem;
   }
@@ -503,7 +682,7 @@ footer .credit a {
   }
 
   .contact .row .map {
-    height: 30rem;
+    height: 15rem;
   }
 
   .contact .row form {
@@ -555,9 +734,9 @@ footer .credit a {
 }
 
 .slide-image1 {
-  width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-left: 5%;
-  margin-top: 23rem;
+  width: 100%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  padding-left: 1rem;
+  margin-top: 18rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
@@ -566,7 +745,7 @@ footer .credit a {
   align-items: center; /* Mengatur perataan vertikal */
 }
 .slide-image2 {
-  width: 90%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  width: 50%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
   margin-top: 8rem;
   margin-left: 5%;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
@@ -588,9 +767,9 @@ footer .credit a {
 }
 
 .slide-images2 {
-  width: 70%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
-  margin-top: 18rem;
-  margin-left: 5%;
+  width: 100%; /* Mengisi lebar gambar sesuai dengan lebar elemen slider */
+  margin-top: 10rem;
+  padding-left: 1rem;
   height: auto; /* Menyesuaikan tinggi gambar agar proporsional */
   max-height: 100%; /* Menetapkan tinggi maksimal gambar */
   object-fit: cover; /* Memastikan gambar mengisi area dengan menjaga rasio aspek */
